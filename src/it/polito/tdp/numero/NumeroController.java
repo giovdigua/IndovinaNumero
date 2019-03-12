@@ -82,13 +82,13 @@ public class NumeroController {
 		int risultato = model.tentativo(tentativo);
 		
 		if(risultato == 0) {
-			txtMessaggi.appendText("Complimenti, hai indovinato in "+ model.getTentativiFatti() +" tentativi\n");
+			txtMessaggi.appendText("Complimenti, hai indovinato in "+ model.getTentativiFatti() +" tentativi!\n");
 			boxControllopartita.setDisable(false);
 			boxControlloTentativi.setDisable(true);
 		} else if (risultato < 0){
-			txtMessaggi.appendText("Tentativo troppo BASSO!\n");
+			txtMessaggi.appendText("Tentativo troppo BASSO!!\n");
 		} else {
-			txtMessaggi.appendText("Tentativo troppo ALTO!\n");
+			txtMessaggi.appendText("Tentativo troppo ALTO!!\n");
 		}
 		
 		// Aggiornare interfaccia con n. tentativi rimasti
