@@ -74,7 +74,8 @@ public class NumeroController {
 
 		
 		if(!model.tentativoValido(tentativo)) {
-			txtMessaggi.appendText("Tentativo non valido\n");
+			txtMessaggi.appendText(String.format("Tentativo non valido: devi inserire un numero "
+					+ "tra %d e %d, senza ripetere lo stesso tentativo", 1, model.getNMAX()));
 			return;
 		}
 		

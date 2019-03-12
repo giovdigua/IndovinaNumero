@@ -116,6 +116,10 @@ public class NumeroModel {
 	}
 
 	
+	public int getNMAX() {
+		return NMAX;
+	}
+
 	public final IntegerProperty tentativiFattiProperty() {
 		return this.tentativiFatti;
 	}
