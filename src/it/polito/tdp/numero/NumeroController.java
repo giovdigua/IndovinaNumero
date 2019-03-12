@@ -86,9 +86,9 @@ public class NumeroController {
 			boxControllopartita.setDisable(false);
 			boxControlloTentativi.setDisable(true);
 		} else if (risultato < 0){
-			txtMessaggi.appendText("Tentativo troppo BASSO\n");
+			txtMessaggi.appendText("Tentativo troppo BASSO!\n");
 		} else {
-			txtMessaggi.appendText("Tentativo troppo ALTO\n");
+			txtMessaggi.appendText("Tentativo troppo ALTO!\n");
 		}
 		
 		// Aggiornare interfaccia con n. tentativi rimasti
